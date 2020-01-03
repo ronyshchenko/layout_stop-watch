@@ -1,0 +1,62 @@
+html {
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%; }
+
+.timer {
+  background: #4b99aa;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+.minutes {
+  border-radius: 5px;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 280px;
+  height: 10px;
+  background: #d15559;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  left: 15px;
+  top: 10px;
+  -webkit-animation: rotate-anim 3600s linear infinite;
+          animation: rotate-anim 3600s linear infinite; }
+
+.seconds {
+  position: absolute;
+  border-radius: 5px;
+  background: #4b99aa;
+  width: 380px;
+  height: 10px;
+  left: 15px;
+  top: 10px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-animation: rotate-anim 60s linear infinite;
+          animation: rotate-anim 60s linear infinite; }
+
+@-webkit-keyframes rotate-anim {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  to {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); } }
+
+@keyframes rotate-anim {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  to {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); } }
+
+/*# sourceMappingURL=main.css.map */
